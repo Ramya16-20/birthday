@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>For Dhilli ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="heart-loader">❤️</div>
+      <p>Something special is loading…</p>
+    </div>
+  </div>
+
+  <!-- Floating Music Button -->
+  <button id="music-btn" class="music-btn" aria-label="Play music">
+    <span id="music-icon">🎵</span>
+  </button>
+
+  <!-- Canvas for particles -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="section hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Hey Dhilli… <span class="heart">❤️</span></h1>
+      <p class="hero-sub">Yes… YOU.</p>
+      <p class="hero-note">Before you say ‘enna idhu?’ and start judging me… 😂<br>Just open it.</p>
+      <button id="open-surprise" class="btn glow-btn">Open Your Surprise ✨</button>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 2 - BIRTHDAY INTRO ================= -->
+  <section id="intro" class="section hidden">
+    <div class="content-wrapper">
+      <h1 class="big-title">HAPPY BIRTHDAY,<br>DHILLI GANESH <span class="heart">❤️</span></h1>
+      <p class="intro-text">But honestly… I don't think “Happy Birthday” is enough for someone like you.</p>
+      <p class="intro-text soft">So I made you something instead.</p>
+      <button class="btn glow-btn next-btn" data-next="why">Continue, Dhilli 👀</button>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 3 - WHY DHILLI ================= -->
+  <section id="why" class="section hidden">
+    <div class="content-wrapper">
+      <h2 class="section-title">Why You Are Special…</h2>
+      <div class="cards-grid">
+        <div class="glass-card">
+          <div class="card-icon">💬</div>
+          <h3>The Advisor</h3>
+          <p>For every confusion I have, somehow you have an advice ready.</p>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon">😂</div>
+          <h3>The Irritating One</h3>
+          <p>Sometimes you are genuinely annoying… but unfortunately, I still like talking to you.</p>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon">🤝</div>
+          <h3>The Reliable One</h3>
+          <p>Whenever I need someone to talk to, somehow you're always there.</p>
+        </div>
+        <div class="glass-card">
+          <div class="card-icon">🌙</div>
+          <h3>The Listener</h3>
+          <p>You listen to my random stories, complaints, overthinking and everything in between.</p>
+        </div>
+        <div class="glass-card special-card">
+          <div class="card-icon">❤️</div>
+          <h3>The Special One</h3>
+          <p>Some people are just friends. Some people slowly become a very important part of your life.</p>
+        </div>
+      </div>
+      <button class="btn glow-btn next-btn" data-next="advice">Next ✨</button>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 4 - ADVICE ARCHIVE ================= -->
+  <section id="advice" class="section hidden">
+    <div class="content-wrapper">
+      <h2 class="section-title">DHILLI'S OFFICIAL ADVICE DEPARTMENT 😂</h2>
+      <div class="advice-grid">
+        <div class="advice-card">
+          <span class="advice-num">Advice #01</span>
+          <h3>“Don't overthink.”</h3>
+          <p>The advice you give me approximately 1000 times.</p>
+        </div>
+        <div class="advice-card">
+          <span class="advice-num">Advice #02</span>
+          <h3>“Stay calm.”</h3>
+          <p>Very easy for YOU to say. 😂</p>
+        </div>
+        <div class="advice-card">
+          <span class="advice-num">Advice #03</span>
+          <h3>“Think before you do something.”</h3>
+          <p>Sometimes I listen. Sometimes… let's move on.</p>
+        </div>
+        <div class="advice-card">
+          <span class="advice-num">Advice #04</span>
+          <h3>“Everything will be okay.”</h3>
+          <p>And somehow, when you say it, I actually believe it.</p>
+        </div>
+      </div>
+      <p class="advice-final">You never officially applied for the position of my personal advisor… but somehow you got promoted. 😂❤️</p>
+      <button class="btn glow-btn next-btn" data-next="gallery">Continue 📸</button>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 5 - MEMORY GALLERY ================= -->
+  <section id="gallery" class="section hidden">
+    <div class="content-wrapper">
+      <h2 class="section-title">Mr.Dhilli<span class="heart">❤️</span></h2>
+
+      <div class="polaroid-grid">
+        <!-- PHOTO 1 - Real photo of Dhilli on the car -->
+        <div class="polaroid">
+          <img src="assets/photos/photo1.jpg" alt="Dhilli" loading="lazy">
+        </div>
+        
+        
+        <div class="polaroid">
+          <img src="assets/photos/photo2.jpg" alt="Dhilli" loading="lazy">
+        </div>
+      </div>
+
+      <button class="btn glow-btn next-btn" data-next="things">Next 💭</button>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 6 - THINGS I NEVER SAY ================= -->
+  <section id="things" class="section hidden">
+    <div class="content-wrapper">
+      <h2 class="section-title">Things I Probably Don't Say Enough…</h2>
+      <div class="reveal-list" id="reveal-list">
+        <p class="reveal-item">01. Thank you for always giving me advice.</p>
+        <p class="reveal-item">02. Thank you for listening to my nonsense.</p>
+        <p class="reveal-item">03. Thank you for making me laugh.</p>
+        <p class="reveal-item">04. Thank you for being there during random situations.</p>
+        <p class="reveal-item">05. Thank you for being exactly who you are.</p>
+        <p class="reveal-item final-reveal">❤️ And thank you for becoming someone I genuinely don't want to lose.</p>
+      </div>
+      <button class="btn glow-btn next-btn" data-next="secret">One more thing…</button>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 7 - SECRET FEELING ================= -->
+  <section id="secret" class="section hidden">
+    <div class="content-wrapper secret-content">
+      <h2 class="section-title">Okay… One Small Secret.</h2>
+      <div id="typewriter" class="typewriter"></div>
+      <div class="tiny-heart">❤️</div>
+      <button class="btn glow-btn next-btn" data-next="wish" style="margin-top: 40px;">Continue 🌹</button>
+    </div>
+  </section>
+
+  <!-- ================= PAGE 8 - BIRTHDAY WISH ================= -->
+  <section id="wish" class="section hidden">
+    <div class="content-wrapper">
+      <h2 class="section-title">My Wish For You, Dhilli <span class="heart">❤️</span></h2>
+      <div class="wish-text">
+        <p>I hope this year gives you everything you've been working for.</p>
+        <p>I hope you meet people who appreciate the person you are.</p>
+        <p>I hope you have more reasons to laugh, more memories to make, more dreams to chase, and more moments that make you genuinely happy.</p>
+        <p class="pause">And no matter how much life changes…</p>
+        <p>I hope I still get to annoy you, talk to you, ask you things, listen to your advice and create random memories with you.</p>
+        <p class="final-wish">Happy Birthday, Dhilli. ❤️</p>
+      </div>
+      <button class="btn glow-btn next-btn" data-next="final">One Last Thing… 👀</button>
+    </div>
+  </section>
+
+  <!-- ================= FINAL SURPRISE ================= -->
+  <section id="final" class="section hidden final-section">
+    <div class="final-content">
+      <div id="final-light"></div>
+      <div id="final-heart">❤️</div>
+      <div id="final-text" class="final-text"></div>
+      <p class="signature">From someone who is very lucky to have you in her life.</p>
+    </div>
+  </section>
+
+  <!-- Easter Egg Heart -->
+  <div id="easter-egg" class="easter-egg" title="…">❤️</div>
+
+  <!-- Easter Egg Modal -->
+  <div id="easter-modal" class="easter-modal hidden">
+    <div class="easter-box">
+      <p>Okay… you found the secret. 😂❤️</p>
+      <p>Fine. You're officially extra special.</p>
+      <div class="purple-heart">💜</div>
+      <button id="close-easter" class="btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <audio id="bg-music" loop>
+    <source src="assets/birthday-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
